@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Amir Bagheri</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<div class="container" style="text-align: center;">
+					<img src="images/face.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+				</div>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Hello, I'm Amir</h1>
+					<p>Welcome to my portfolio. Here, you can learn more about me and see what I've <br> worked on
+						recently. Feel free to contact me anytime, and enjoy your stay!</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!-- <li><a href="#elements">Elements</a></li> -->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">About</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<p>I'm currently an undergraduate at Northeastern University (graduating May 2023), studying
+					data science as my major
+					along with mathematics as my minor. Throughout my time at Khoury College of Computer Sciences, I've
+					gained an increasingly strong and experienced background in not only computer science, but also
+					math. Post graduation, I hope to further develop these skills through a career in data science.
+					For
+					now, I'm currently on the lookout for a co-op position before my Junior year spring semester to
+					gain valuable experience in the industry.</p>
+
+				<p>Outside of academic and professional affairs, I love to enjoy and explore life with my friends and
+					family. As for interests, I pass time by playing guitar, watching TV shows,
+					skateboarding / playing basketball with friends, or playing video games. I particularly enjoy
+					developing my hobbies, as seeing my skills grow over time is very rewarding.</p>
+			</article>
+
+
+			<!-- Projects -->
+			<article id="projects">
+				<h2 class="major">Projects</h2>
+				<p> <i> Take a look at some of my best work. For a closer look at my code, I'll make <a
+							href="https://github.com/arezab213?tab=repositories" target="_blank"> my repositories</a>
+						public upon
+						request.</i></p>
+
+				<section>
+					<h3 class="major">Song Popularity Predictor</h3>
+					<ul class="actions">
+						<li><a href="https://colab.research.google.com/drive/1YpRvZq4-DSbWSCLLZ85IAy1_W9NmBmZf?usp=sharing"
+								target="_blank" class="button primary">View on Google Colab</a></li>
+					</ul>
+					<p> For my Foundations of Data Science course (DS 3000), my group and I created a report in
+						Jupyter
+						Notebook detailing
+						our findings in regards to predicting the expected popularity of a piece of music. We used a
+						Spotify Dataset from Kaggle that included approximately 160,000 songs, as well
+						as a scraped dataset from a listing of the top 100 most streamed songs on Spotify. Using various
+						Python libraries and toolkits,
+						we cleaned and visualized the data, and fit it to both regression and classification models.
+						After optimizing our models, we found that on our test sets, the best regressor (K-nearest
+						Neighbors) had an R<sup>2</sup> of .3088, and the best classifier (LinearSVC) had an accuracy of
+						78.43%.
+					</p>
+					<p>In the report, my contributions involved all of the written portions (excluding the executive
+						summary), as well as all of the code relating to the classification models. I also created two
+						of the visualizations, and also improved upon / added to the other three in addition to their
+						respective analyses. As an example, you can see one of my visualizations below:</p>
+
+					<iframe frameborder="0" scrolling="no" src="//plotly.com/~arezab213/1.embed"></iframe>
+
+					<blockquote> A 3D scatter plot can be used to see how Spotify's popularity metric
+						behaves with 2 values: the year released, and the amount of streams. A color scale reflects the
+						rank, with higher ranking
+						songs having lighter shades, and lower ranking songs having darker shades. From this
+						visualization, it can be seen that the popularity value is a very time-based variable, as it has
+						a strong correlation to the
+						release year of the song. Thus, by Spotify's metric, a song can have a high rank with many total
+						streams, but if the streams are not recent, then the popularity score will not be as similarly
+						high.
+					</blockquote>
+					<hr />
+
+
+					<section>
+						<h3 class="major">EasyAnimator</h3>
+
+						<p>In my Object-Oriented Design class (CS 3500), I pair-programmed a GUI application with my
+							friend Alex Les. Our program is able to read text-based input files (many of which were
+							given to us)
+							to build an animation of
+							simple shapes, including rectangles, ellipses, and plus shapes. </p>
+
+						<p>Animations can be displayed
+							visually or textually outputted through tables of animation frame data. In our interactive
+							visual animations, standard playback and speed controls are supported, along with toggles
+							for looping,
+							discrete frame playing, as well as an outline mode for shapes. Users can also insert slow
+							motion commands in the input files to create intervals of slow motion in the animation.
+							Lastly, our application can also export the animations in SVG code to be played in a
+							browser.</p>
+
+						<p>Throughout our project, we
+							maintained a robust Model-View-Controller (MVC) design, documented our code throughout, and
+							thoroughly tested each component
+							of the application. In a later part of our assignment, we created fully functional adapters
+							to accomodate for additional view components received from other students' projects. This
+							involved little to no
+							changes in our original code: a direct result of our strong program design (minimal
+							coupling,
+							interface segregation, single class responsibility, etc). </p>
+						<p>Below are some videos demonstrating our application.</p>
+
+						<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+							<source src="/images/big-bang.mov" />
+						</video>
+						<blockquote> Here, I demonstrate all of the interactive playback controls during a big-bang
+							animation.
+						</blockquote>
+
+						<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+							<source src="/images/bubbles.mov" />
+						</video>
+						<blockquote> This video shows an animation portraying how the bubble sort algorithm works.
+							Unlike the previously shown big-bang animation, this input file for this animation was made
+							programmitically by me and Alex.
+						</blockquote>
+
+						<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+							<source src="/images/flags.mov" />
+						</video>
+						<blockquote> Lastly, we made the input file for this <i>Flags of Scandinavia</i> animation by
+							hand. </blockquote>
+
+						<p>A portion of the flag animation's input
+							file is shown below, to give a sense of what our application reads in order to build the
+							animations. The position, dimensions, and RGB values of the top left rectangle over time are
+							listed:</p>
+
+						<pre><code>shape topLeft rectangle 
+							<br>motion topLeft 1 -210 -210 210 210 0 48 135 50 0 0 210 210 0 48 135
+							<br>motion topLeft 140 0 0 210 210 0 48 135 190 0 0 210 210 186 12 47
+							<br>motion topLeft 220 0 0 210 210 186 12 47 270 0 0 210 210 255 255 255
+							<br>motion topLeft 380 0 0 210 210 255 255 255 430 0 0 210 210 218 41 28
+							<br>motion topLeft 460 0 0 210 210 218 41 28 510 0 0 210 210 0 75 135
+							<br>motion topLeft 540 0 0 210 210 0 75 135 590 0 0 210 210 255 255 255</code></pre>
+						<hr />
+
+						<section>
+							<h3 class="major">Space Invaders</h3>
+							<p>I developed a simple game of Space Invaders for my Fundamentals of Computer Science II
+								class (CS 2500). The player can use the arrow keys to move side to side and the spacebar
+								for firing from the spaceship. </p>
+							<p>At most, the invaders can have 10 shots fired on screen at any moment, and the player is
+								also limited at a maximum of 3 shots on screen. Once all the invaders are hit, the
+								player has won. However, if the player gets hit by an Invader bullet, the game ends in a
+								loss.</p>
+
+							<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+								<source src="/images/InvadersWin.mov" />
+							</video>
+							<blockquote> The complete gameplay resulting in a player victory can be seen in this video,
+								portraying the precise collisions between the player's bullets and the Invader's
+								spaceships.</blockquote>
+
+							<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+								<source src="/images/InvadersLoss.mov" />
+							</video>
+							<blockquote> An example of a game resulting in a loss. </blockquote>
+							<hr />
+
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<span class="image main"><img src="images/contact.jpg" alt="" /></span>
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-email">E-Mail & Resume:</label>
+								<ul class="icons">
+									<li><a href="mailto:bagheri.a@northeastern.edu"
+											class="icon solid fa-mail-bulk"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/arezab213" class="icon solid fa-file-alt"><span
+												class="label">Resume</span></a></li>
+								</ul>
+							</div>
+							<div class="field half">
+								<label for="demo-profiles">Profiles:</label>
+								<ul class="icons">
+									<!-- <li><a href="https://www.linkedin.com/in/amirreza-bagheri-0173b91bb/"
+											class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li> -->
+									<li><a href="https://github.com/arezab213" class="icon brands fa-github"><span
+												class="label">GitHub</span></a></li>
+									<!-- <li><a href=https://www.instagram.com/amirrbagheri_/ class="icon brands fa-instagram"><span
+												class="label">Instagram</span></a></li> -->
+								</ul>
+							</div>
+					</form>
+				</section>
+
+
+
+			</article>
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.
+					</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
+
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Amir Bagheri 2021</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
